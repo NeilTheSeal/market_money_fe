@@ -1,0 +1,78 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://localhost:3000/api/v0/markets/322482",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "User-Agent": [
+            "Faraday v2.9.0"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "0"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Permitted-Cross-Domain-Policies": [
+            "none"
+          ],
+          "Referrer-Policy": [
+            "strict-origin-when-cross-origin"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Vary": [
+            "Accept"
+          ],
+          "Etag": [
+            "W/\"6c94864180995adf3a647cec5b4c295d\""
+          ],
+          "Cache-Control": [
+            "max-age=0, private, must-revalidate"
+          ],
+          "X-Request-Id": [
+            "b765009f-df54-4751-82c6-bd0403b5e9cf"
+          ],
+          "X-Runtime": [
+            "0.095202"
+          ],
+          "Server-Timing": [
+            "start_processing.action_controller;dur=0.00, sql.active_record;dur=15.62, instantiation.active_record;dur=0.18, process_action.action_controller;dur=54.93"
+          ],
+          "Content-Length": [
+            "246"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"data\":{\"id\":\"322482\",\"type\":\"market\",\"attributes\":{\"name\":\"39 North Marketplace\",\"street\":\"Downtown Sparks Victorian Ave\",\"city\":\"Sparks\",\"county\":\"Washoe\",\"state\":\"Nevada\",\"zip\":\"89431\",\"lat\":\"39.534773\",\"lon\":\"-119.754962\",\"vendor_count\":5}}}"
+        }
+      },
+      "recorded_at": "Thu, 23 May 2024 22:19:14 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.2.0"
+}
