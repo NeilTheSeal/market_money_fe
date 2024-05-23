@@ -1,0 +1,78 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://localhost:3000/api/v0/vendors/54849",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "User-Agent": [
+            "Faraday v2.9.0"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "0"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Permitted-Cross-Domain-Policies": [
+            "none"
+          ],
+          "Referrer-Policy": [
+            "strict-origin-when-cross-origin"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Vary": [
+            "Accept"
+          ],
+          "Etag": [
+            "W/\"ba4c359d13756aec82eebcd4001a2da2\""
+          ],
+          "Cache-Control": [
+            "max-age=0, private, must-revalidate"
+          ],
+          "X-Request-Id": [
+            "389fd9c2-04b7-46cd-b113-7632265c6b20"
+          ],
+          "X-Runtime": [
+            "0.080515"
+          ],
+          "Server-Timing": [
+            "start_processing.action_controller;dur=0.01, sql.active_record;dur=4.39, instantiation.active_record;dur=7.70, process_action.action_controller;dur=28.77"
+          ],
+          "Content-Length": [
+            "346"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"data\":{\"id\":\"54849\",\"type\":\"vendor\",\"attributes\":{\"name\":\"Organic Farms\",\"description\":\"This vendor specializes in selling fresh, organic fruits and vegetables grown on their farm. They may also sell jams, jellies, and pickles made from their produce.\",\"contact_name\":\"Msgr. Floyd Cole\",\"contact_phone\":\"390.398.6702\",\"credit_accepted\":false}}}"
+        }
+      },
+      "recorded_at": "Thu, 23 May 2024 22:28:08 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.2.0"
+}

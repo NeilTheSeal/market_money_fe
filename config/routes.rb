@@ -11,4 +11,9 @@ Rails.application.routes.draw do
     :markets,
     only: %i[index show]
   )
+
+  resources(
+    :vendors,
+    only: %i[show]
+  )
 end
