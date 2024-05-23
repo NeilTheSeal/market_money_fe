@@ -1,0 +1,9 @@
+<% @facade.all_markets.each do |market| %>
+  <ul>
+    <li>
+      <div><%= market.name %></div>
+      <div><%= market.city %></div>
+      <div><%= market.state %></div>
+    </li>
+  </ul>
+<% end %>
