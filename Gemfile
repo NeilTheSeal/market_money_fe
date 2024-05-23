@@ -44,6 +44,7 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
+gem "faraday"
 gem "rubocop" # optional - for use with RuboCop VSCode plugin
 gem "rubocop-discourse" # optional
 gem "solargraph" # optional - for use with Solargraph VSCode plugin
