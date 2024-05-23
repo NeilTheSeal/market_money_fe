@@ -7,13 +7,21 @@ RSpec.describe "Market Index", type: :feature do
 
       expect(page).to have_text("Farmers Markets")
 
-      expect(page).to have_text("39 North Marketplace")
-      expect(page).to have_text("Sparks")
-      expect(page).to have_text("Nevada")
+      body = JSON.parse(
+        cassette.serializable_hash.dig(
+          "http_interactions", 0, "response", "body", "string"
+        ),
+        symbolize_names: true
+      )
 
-      expect(page).to have_text("9th and Grand Farmers Market")
-      expect(page).to have_text("Salina")
-      expect(page).to have_text("Kansas")
+      (1..5).each do |i|
+        market = body[:data][i]
+        attrs = market[:attributes]
+
+        expect(page).to have_text(attrs[:name])
+        expect(page).to have_text(attrs[:city])
+        expect(page).to have_text(attrs[:state])
+      end
     end
   end
 end
